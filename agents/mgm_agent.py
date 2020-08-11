@@ -34,7 +34,7 @@ class MGMAgent(DCOPAgent):
         # Compute current schedule and update best one
         if self.actions.compute_schedule(self.current_cycle):
             # NOTE: REPLACE THE BELOW WITH THE RIGHT SCHEDULE
-            # print(self.actions.get_current_schedule())
+            print(self.actions.get_current_schedule())
             self.actions.update_best_schedule(self.actions.get_current_schedule())
         else:
             print("Error: schedule not found")
